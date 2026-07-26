@@ -2,6 +2,8 @@
 
 A lightweight Minecraft plugin that makes all signs appear with glowing text for Bedrock/Floodgate players on Java servers.
 
+Originally built to solve a sign readability issue on a personal server, now released publicly for anyone running a hybrid Java/Bedrock setup.
+
 ## Features
 
 - **Zero configuration** — install and forget
