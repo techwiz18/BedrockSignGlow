@@ -2,6 +2,16 @@
 
 A lightweight Minecraft plugin that makes all signs appear with glowing text for Bedrock/Floodgate players on Java servers.
 
+## About
+
+On hybrid Java/Bedrock servers running [Geyser](https://geysermc.org/) and [Floodgate](https://geysermc.org/download/floodgate), Bedrock clients connect through a proxy that translates the Java protocol. One thing this translation misses: sign glowing text.
+
+When a Java player dyes a sign and makes the text glow, Bedrock players see the sign as plain — the glowing effect is silently dropped during protocol translation. This happens because the `has_glowing_text` flag in the sign's NBT data isn't being forwarded correctly to Bedrock clients.
+
+BedrockSignGlow fixes this by intercepting outgoing sign packets and forcing the `has_glowing_text` flag for Bedrock players. The result is that Bedrock clients render signs with the same glowing effect Java players see — the bright text with the dark outline background.
+
+This is especially useful for servers that use glowing signs for navigation, shops, rules, or any other purpose where readability matters for all players regardless of platform.
+
 ## Features
 
 - **Zero configuration** — install and forget
