@@ -4,13 +4,13 @@ A lightweight Minecraft plugin that makes all signs appear with glowing text for
 
 ## About
 
-On hybrid Java/Bedrock servers running [Geyser](https://geysermc.org/) and [Floodgate](https://geysermc.org/download/floodgate), Bedrock clients connect through a proxy that translates the Java protocol. One thing this translation misses: sign glowing text.
+On hybrid Java/Bedrock servers running [Geyser](https://geysermc.org/) and [Floodgate](https://geysermc.org/download/floodgate), sign text readability is a real problem for Bedrock players.
 
-When a Java player dyes a sign and makes the text glow, Bedrock players see the sign as plain — the glowing effect is silently dropped during protocol translation. This happens because the `has_glowing_text` flag in the sign's NBT data isn't being forwarded correctly to Bedrock clients.
+Java clients render colored sign text with vibrant, high-contrast colors that are easy to read. Bedrock clients, however, have noticeably lower saturation and different text rendering — colored signs that look perfectly fine on Java become washed out and nearly impossible to read on Bedrock. The standard workaround is applying a Glow Ink Sac to signs, which adds a dark outline/background behind the text and makes it readable. But Glow Ink Sacs are a finite resource, and server owners can't realistically expect every sign to have one applied.
 
-BedrockSignGlow fixes this by intercepting outgoing sign packets and forcing the `has_glowing_text` flag for Bedrock players. The result is that Bedrock clients render signs with the same glowing effect Java players see — the bright text with the dark outline background.
+BedrockSignGlow solves this by forcing the glowing text effect on all signs for Bedrock players. Since the glowing effect adds a dark background behind the text, it dramatically improves contrast and readability for colored signs — without requiring Glow Ink Sacs. Java clients are unaffected; only Bedrock players see the glow.
 
-This is especially useful for servers that use glowing signs for navigation, shops, rules, or any other purpose where readability matters for all players regardless of platform.
+This is especially useful for servers that use colored signs for navigation, shops, rules, or any other purpose where readability matters for all players regardless of platform.
 
 ## Features
 
