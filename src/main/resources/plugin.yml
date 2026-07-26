@@ -2,5 +2,5 @@ name: BedrockSignGlow
 version: ${project.version}
 main: com.techwiz18.bedrocksigns.BedrockSignGlow
 api-version: '1.20'
-softdepend: [ProtocolLib, floodgate]
+depend: [ProtocolLib, floodgate]
 description: Makes all signs glow for Bedrock/Floodgate players on Java servers
