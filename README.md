@@ -43,3 +43,7 @@ The built JAR will be in `target/`.
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+## Disclaimer
+
+This project was developed with the assistance of AI (OpenAI's Codex). All code was reviewed and tested by a human before release.
