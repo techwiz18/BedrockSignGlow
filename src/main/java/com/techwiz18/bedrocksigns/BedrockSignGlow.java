@@ -1,4 +1,4 @@
-package com.yourserver.bedrocksigns;
+package com.techwiz18.bedrocksigns;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
