@@ -11,7 +11,7 @@
 
     <name>BedrockSignGlow</name>
     <description>Makes all signs glow for Bedrock/Floodgate players on Java servers</description>
-    <url>https://github.com/youruser/BedrockSignGlow</url>
+    <url>https://github.com/techwiz18/BedrockSignGlow</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

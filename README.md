@@ -17,7 +17,7 @@ A lightweight Minecraft plugin that makes all signs appear with glowing text for
 
 ## Installation
 
-1. Download the latest JAR from [Releases](https://github.com/youruser/BedrockSignGlow/releases)
+1. Download the latest JAR from [Releases](https://github.com/techwiz18/BedrockSignGlow/releases)
 2. Place it in your server's `plugins/` folder alongside ProtocolLib and Floodgate
 3. Restart the server
 
@@ -33,7 +33,7 @@ For each sign sent to a Bedrock player, it sets `has_glowing_text` to `1` in the
 ## Building
 
 ```bash
-git clone https://github.com/youruser/BedrockSignGlow.git
+git clone https://github.com/techwiz18/BedrockSignGlow.git
 cd BedrockSignGlow
 mvn clean package
 ```
